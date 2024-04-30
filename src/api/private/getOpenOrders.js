@@ -5,8 +5,8 @@ const { validateFields } = require('../../validation')
 const isPositiveNumber = require('../../validation/isPositiveNumber')
 
 const validation = {
-  primaryCurrencyCode: ['isRequired'],
-  secondaryCurrencyCode: ['isRequired'],
+  // primaryCurrencyCode: ['isRequired'],
+  // secondaryCurrencyCode: ['isRequired'],
   pageIndex: ['isPositiveNumber'],
   pageSize: [isPositiveNumber(50)]
 }

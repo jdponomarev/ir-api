@@ -14,13 +14,15 @@ const validation = {
 const placeLimitOrder = (apiKey, apiSecret) => {
   const buildPayload = payloadBuilder(apiKey, apiSecret)
 
-  return async ({ primaryCurrencyCode, secondaryCurrencyCode, orderType, price, volume }) => {
+  return async ({ primaryCurrencyCode, secondaryCurrencyCode, orderType, price, volume, timeInForce, clientId }) => {
     const payload = {
       primaryCurrencyCode,
       secondaryCurrencyCode,
       orderType,
       price,
-      volume
+      volume,
+      timeInForce,
+      clientId
     }
     // eslint-disable-next-line fp/no-unused-expression
     validateFields(payload, validation)

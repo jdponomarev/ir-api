@@ -21,5 +21,6 @@ module.exports = {
   requestFiatWithdrawal: require('./requestFiatWithdrawal'),
   synchDigitalCurrencyDepositAddressWithBlockchain: require('./synchDigitalCurrencyDepositAddressWithBlockchain'),
   withdrawDigitalCurrency: require('./withdrawDigitalCurrency'),
-  withdrawFiatCurrency: require('./withdrawFiatCurrency')
+  withdrawFiatCurrency: require('./withdrawFiatCurrency'),
+  cancelOrders: require('./cancelOrders'),
 }
